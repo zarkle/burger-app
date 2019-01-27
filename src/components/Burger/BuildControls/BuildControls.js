@@ -21,7 +21,8 @@ const buildControls = (props) => (
     ))}
     <p>Burger Price: ${props.price.toFixed(2)}</p>
     <button className={styles.OrderButton}
-      disabled={!props.placeOrder}>ORDER BURGER</button>
+      disabled={!props.placeOrder} 
+      onClick={props.ordered}>ORDER BURGER</button>
   </div>
 );
 
