@@ -5,7 +5,7 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 
-const INGREDIENT_PRICES = {
+export const INGREDIENT_PRICES = {
   salad: 0.5,
   cheese: 1,
   meat: 2,
