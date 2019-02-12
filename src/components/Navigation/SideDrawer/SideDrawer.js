@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './sideDrawer.module.css';
+import styles from './SideDrawer.module.css';
 import Logo from '../../Logo/Logo';
-import NavItems from '../../Navigation/NavItems';
+import NavItems from '../../Navigation/NavItems/NavItems';
 
 const sideDrawer = (props) => {
   
