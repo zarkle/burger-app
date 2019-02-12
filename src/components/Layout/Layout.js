@@ -5,11 +5,21 @@ import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import styles from './Layout.module.css';
 
 class Layout extends Component {
+  state = {
+    showSideDrawer: true,
+  }
+  
+  sideDrawerClosedHandler = () => {
+    this.setState({showSideDrawer: false});
+  }
+  
   render() {
     return (
       <Aux>
         <Toolbar />
-        <SideDrawer />
+        <SideDrawer 
+          open={this.state.showSideDrawer} 
+          closed={this.sideDrawerClosedHandler} />
         <main className={styles.Content}>
           {this.props.children}
         </main>
